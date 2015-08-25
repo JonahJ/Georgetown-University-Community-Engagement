@@ -1,4 +1,4 @@
-<html ng-app="georgetownMapping">
+<html>
 
 <head>
     <title>Mapping @ GU</title>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/cartodb.css">
 </head>
 
-<body ng-controller="mapping">
+<body>
     <section id="discover" class="pane">
         <section class="left">
             <section id="about">
@@ -47,6 +47,7 @@
                 <section id="info">
 
                     <h2>Map Info</h2>
+                    <h1>{{_layers}}</h1>
                     <!-- <section id="navigation">
                         <div>abv</div>
                     </section> -->
@@ -70,12 +71,15 @@
             <section id="layers">
 
                 <!-- <div class="test">HI</div> -->
-                <div class="layer-wrapper selected">
+                <!-- <div class="layer-wrapper selected" ng-repeat="layerz in layers">
                     <div class="layer-content">
-                        <span>Heat Map</span>
+                        <span>Hello {{ layerz.name }}</span>
                     </div>
-                </div>
-                <div class="layer-wrapper">
+                </div> -->
+
+
+
+                <!-- <div class="layer-wrapper">
                     <div class="layer-content">
                         <span>Center for XYZ</span>
                     </div>
@@ -89,7 +93,7 @@
                     <div class="layer-content">
                         <span>Layer 4</span>
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <!-- <section id="map"><h1>MAP HERE</h1></section> -->
@@ -118,8 +122,9 @@
 
     <section id="engage" class="pane"></section>
 
-    <script type="text/javascript" src="js/angular.min.js"></script>
+    <!-- <script type="text/javascript" src="js/angular.min.js"></script> -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/d3.min.js"></script>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
