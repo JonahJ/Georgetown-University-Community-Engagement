@@ -9,121 +9,115 @@
 </head>
 
 <body>
-    <section id="discover" class="pane">
-        <section class="left">
-            <section id="about">
-                <section id="branding">
-                    <img id="georgetown-logo" src="img/georgetown-logo.png">
-                </section>
-                <section id="navigation">
-                    <a href="#discover" class="navigation-link selected">
-                        <div>
-                            <span>Discover</span>
-                        </div>
-                    </a>
-                    <a href="#learn" class="navigation-link">
-                        <div>
-                            <span>Learn</span>
-                        </div>
-                    </a>
-                    <a href="#engage" class="navigation-link">
-                        <div>
-                            <span>Engage</span>
-                        </div>
-                    </a>
-                </section>
-                <section id="description">
-                    <h1>Mapping Community Engagement</h1>
-                    <p>Hover over the map to see where Georgetown University is everday in DC</p>
-                </section>
-            </section>
 
-            <section id="map-info">
-                <section id="key">
-
-                    <h2>Map Key</h2>
+    <div class="main">
+        <section id="discover" class="pane">
+            <section class="left">
+                <section id="about">
+                    <section id="branding">
+                        <img id="georgetown-logo" src="img/georgetown-logo.png">
+                    </section>
+                    <section id="navigation">
+                        <a href="#discover" class="navigation-link selected">
+                            <div>
+                                <span>Discover</span>
+                            </div>
+                        </a>
+                        <a href="#learn" class="navigation-link">
+                            <div>
+                                <span>Learn</span>
+                            </div>
+                        </a>
+                        <a href="#engage" class="navigation-link">
+                            <div>
+                                <span>Engage</span>
+                            </div>
+                        </a>
+                    </section>
+                    <section id="description">
+                        <h1>Mapping Community Engagement</h1>
+                        <p>Hover over the map to see where Georgetown University is everday in DC</p>
+                    </section>
                 </section>
 
-                <section id="info">
+                <section id="map-info">
+                    <!-- <section id="key">
 
-                    <h2>Map Info</h2>
-                    <h1>{{_layers}}</h1>
-                    <!-- <section id="navigation">
-                        <div>abv</div>
+                        <h2>Map Key</h2>
                     </section> -->
-                </section>
-            </section>
 
-            <!-- <div id="more-info" ng-show="hovered">
-                    <div id="marker" class="center">
-                        <h1 id="name">{{hovered_data.name}}</h1>
-                        <h2>{{hovered_data.address_1}}</h2>
-                        <h2>{{hovered_data.address_2}}</h2>
+                    <section id="info" class="center">
 
+                        <h1>Name of location</h1>
 
-                        <div id="learn-more" class="center">
-                            <h1><a href="#learn">Learn more</a></h1>
+                        <div id="hover-address">
+                            <h3>38 Sunset Drive</h3>
+                            <h4>Ossining, NY 10562</h4>
                         </div>
-                    </div>
-                </div> -->
-        </section>
-        <section class="right">
-            <section id="layers">
 
-                <!-- <div class="test">HI</div> -->
-                <!-- <div class="layer-wrapper selected" ng-repeat="layerz in layers">
-                    <div class="layer-content">
-                        <span>Hello {{ layerz.name }}</span>
-                    </div>
-                </div> -->
+                        <div id="hover-description" class="left">
+                            <p>[description] in guce_account__dc_ward the guce_progr from the department of the campus Campus</p>
+                        </div>
+
+                        <a href="#learn">
+                            <div id="hover-learn-more" class="blink">
+                                <h1>Learn More</h1>
+                            </div>
+                        </a>
 
 
 
-                <!-- <div class="layer-wrapper">
-                    <div class="layer-content">
-                        <span>Center for XYZ</span>
-                    </div>
-                </div>
-                <div class="layer-wrapper">
-                    <div class="layer-content">
-                        <span>Demographics</span>
-                    </div>
-                </div>
-                <div class="layer-wrapper">
-                    <div class="layer-content">
-                        <span>Layer 4</span>
-                    </div>
-                </div> -->
+                        <!-- <section id="navigation">
+                            <div>abv</div>
+                        </section> -->
+                    </section>
+                </section>
+
+                <!-- <div id="more-info" ng-show="hovered">
+                        <div id="marker" class="center">
+                            <h1 id="name">{{hovered_data.name}}</h1>
+                            <h2>{{hovered_data.address_1}}</h2>
+                            <h2>{{hovered_data.address_2}}</h2>
+
+
+                            <div id="learn-more" class="center">
+                                <h1><a href="#learn">Learn more</a></h1>
+                            </div>
+                        </div>
+                    </div> -->
             </section>
+            <section class="right">
+                <section id="layers">
+                </section>
 
-            <!-- <section id="map"><h1>MAP HERE</h1></section> -->
+                <div id="map"></div>
+            </section>
+        </section>
 
-            <div id="map">
-                <!-- <div id="map"></div> -->
+        <section id="learn" class="pane">
+            <div id="scroll-up" class="center blink">
+                <h1><a href="#discover">Scroll up to explore more</a></h1>
+            </div>
+
+            <div class="inset">
+                 <h1>Topic: Sample</h1>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <br>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+
             </div>
         </section>
-    </section>
 
-    <section id="learn" class="pane">
-        <div id="scroll-up" class="center blink">
-            <h1><a href="#discover">Scroll up to explore more</a></h1>
-        </div>
+        <section id="engage" class="pane"></section>
 
-        <div class="inset">
-             <h1>Topic: Sample</h1>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <br>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-
-
-        </div>
-    </section>
-
-    <section id="engage" class="pane"></section>
+    </div>
 
     <!-- <script type="text/javascript" src="js/angular.min.js"></script> -->
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
+
+    <script type="text/javascript" src="js/onepagescroll.min.js"></script>
     <script type="text/javascript" src="js/d3.min.js"></script>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
     <script type="text/javascript" src="js/app.js"></script>

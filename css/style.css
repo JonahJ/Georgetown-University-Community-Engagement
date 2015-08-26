@@ -16,38 +16,28 @@ section.pane{
 
 
 section.left{
-    /*width: 25vw;*/
     min-width: 300px;
-    /*max-width: 500px;*/
-
     flex: 1;
     display: flex;
     flex-direction: column;
     height: 100vh;
     background: #002147;
     z-index: 10;
-
     padding: 2vh 2vw;
-
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 #navigation{
     background-color: red;
     flex: 1;
     display: flex;
-
-    /*text-align: center;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
-.navigation-link {
+a {
     text-decoration: none;
     color: white;
+}
+.navigation-link {
     flex: 1;
     display: flex;
     text-align: center;
@@ -60,22 +50,13 @@ section.left{
     background-color: #8D817B;
 }
 
-.navigation-link.selected{
-    /*background-color: #8D817B;*/
-}
-
 #about {
     flex: 1;
     flex-direction: column;
     display: flex;
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*background-color: orange;*/
-    /*margin: 0 auto;*/
 }
 
 #map-info {
-    /*background-color: blue;*/
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -83,64 +64,37 @@ section.left{
 }
 
 #map-info > #key{
-    background-color: red;
+    /*background-color: red;*/
     flex: 1;
 }
 
 #map-info > #info{
-    background-color: blue;
+    /*background-color: blue;*/
     flex: 1;
 
 }
 
 section#branding{
-    /*background-color: red;*/
     justify-content: center;
     align-items: center;
     flex: 1;
-    /*display: flex;*/
-
-/*        padding: 2vh 0 0 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-
-    */
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-    /*width: 100%;*/
 }
 
 section#description{
-    /*background-color: green;*/
     flex: 15;
     text-align: center;
-
-    /*width: 80%;*/
-    /*margin: 0 auto;*/
 }
 
 section.right{
     flex: 4;
     display: flex;
     flex-direction: column;
-    /*width: 75vw;*/
-    /*background-color: red;*/
-
-    /*float: left;*/
-
-/*    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-*/}
+}
 
 
 
 #map{
     flex: 13;
-    background-color: orange;
     display: flex;
     flex-flow: column wrap;
 }
@@ -152,19 +106,12 @@ section.right{
     width: auto !important;
 }
 
-/*#map {
-    flex: 1 1 auto;
-    background-color: green;
-}*/
+
 #layers{
     flex: 1;
     display: flex;
-    /*width: 100%;*/
-    /*flex-wrap: wrap;*/
-    background-color:green;
     flex-direction: row;
     cursor: pointer;
-    /*width: 100%;*/
 
 
     justify-content: center;
@@ -185,14 +132,19 @@ section.right{
 }
 
 .layer-wrapper:hover{
-    background-color: #8D817B;
+    background-color: rgba(141,129,123, 0.5);
 }
 
 .layer-wrapper.selected{
     background-color: #8D817B;
 }
 
+.layer-wrapper.selected:hover{
+    background-color: rgba(141,129,123, 0.5);
+}
+
 .layer-content > span {
+    font-size: 20px;
     font-size: 2.5vmin;
 }
 
@@ -294,11 +246,13 @@ div#map{
     /*background-color: #002147;*/
 }
 
-
+.left {
+    text-align: left;
+}
 
 .center{
     text-align: center;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*padding: 2vh 2vw;*/
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -388,6 +342,24 @@ div#map{
 }
 
 
+.blink {
+    animation-name: blink-btn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink-btn {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
 
 
 
