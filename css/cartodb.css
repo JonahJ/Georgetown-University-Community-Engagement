@@ -5,6 +5,10 @@ div.cartodb_tooltip {
     display: none;
 }
 
+div.cartodb-attribution-button {
+    display: none !important;
+}
+
 div.cartodb_tooltip p {
     font-family: "robotoregular", Helvetica, Arial, Sans-serif;
     font-size: 15px;
