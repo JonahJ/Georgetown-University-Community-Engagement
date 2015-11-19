@@ -1,125 +1,157 @@
 <html>
     <head>
-        <title>Mapping @ GU</title>
+        <title>GU Mapping Community Engagement</title>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/social-share-kit.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.12/themes/css/cartodb.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/cartodb.css">
     </head>
     <body>
-        <div class="main">
-            <section id="discover" class="pane">
-                <section class="left">
-                    <section id="about">
-                        <section id="branding" class="center">
-                            <img id="georgetown-logo" src="img/georgetown-logo.png">
-                            <!-- <section id="description"> -->
-                            <!-- <h1>Mapping Community Engagement</h1> -->
-                            <!-- <p>Hover over the map to see where Georgetown University is everday in DC</p> -->
-                            <!-- </section> -->
-                        </section>
-                        <!-- <section id="navigation">
-                            <a href="#discover" class="navigation-link selected">
-                                <div>
-                                    <span>Discover</span>
+        <div id="discover" class="pane">
+            <div class="col-left">
+                <div id="branding">
+                    <img id="georgetown-logo" src="img/georgetown-logo.png">
+                    <h1 id="title">Mapping Community Engagement</h1>
+                </div>
+                <div id="navigation">
+                    <a href="#discover" class="navigation-link selected" title="Discover">
+                        <div>
+                            <!-- <span class="glyphicon glyphicon-picture"></span> -->
+                            <!-- <span class="glyphicon glyphicon-screenshot"></span> -->
+                            <span class="glyphicon glyphicon-globe"></span>
+                            <!-- <span class="glyphicon glyphicon-search"></span> -->
+                            <span>Discover</span>
+                        </div>
+                    </a>
+                    <a href="#learn" class="navigation-link" title="Learn">
+                        <div>
+                            <span class="glyphicon glyphicon-book"></span>
+                            <!-- &nbsp; -->
+                            <span>Learn</span>
+                        </div>
+                    </a>
+                    <a href="#engage" class="navigation-link" title="Engage">
+                        <div>
+                            <span class="glyphicon glyphicon-road"></span>
+                            <span>Engage</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom-container">
+                    <div class="bottom">
+                        <div id="map-hover-info-container">
+                            <div id="map-hover-info">
+
+                                <!-- <div id='hover-title'>
+                                    <h1>Site Name</h1>
                                 </div>
-                            </a>
-                            <a href="#learn" class="navigation-link">
-                                <div>
-                                    <span>Learn</span>
+                                <div id='hover-caption'>
+                                    <h2>Site caption</h2>
                                 </div>
-                            </a>
-                            <a href="#engage" class="navigation-link">
-                                <div>
-                                    <span>Engage</span>
+                                <div id='hover-info-expanded'>
+                                    <table>
+                                        <tr>
+                                            <td class="variable-name">Jill</td>
+                                            <td class="variable-content">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="variable-name">Jill</td>
+                                            <td class="variable-content">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="variable-name">Jill</td>
+                                            <td class="variable-content">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="variable-name">Jill</td>
+                                            <td class="variable-content">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="variable-name">Jill</td>
+                                            <td class="variable-content">50</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                            </a>
-                        </section> -->
-                        <section id="description">
-                            <h1>Mapping Community Engagement</h1>
-                            <p>Hover over the map to see where Georgetown University is everday in DC</p>
-                        </section>
-                    </section>
-                    <section id="map-info">
-                        <!-- <section id="key">
-                            <h2>Map Key</h2>
-                        </section> -->
-                        <section id="info" class="center">
-                            <div id="info-main">
-                                <h1>Bright Beginnings</h1>
-                                <h3>128 M ST NW, WASHINGTON, DC, 20001</h3>
-                            </div>
-                            <div id="info-extended">
-                                <p>Gerogetown's [guce_course_instructor_1] helps this [type_of_account] in the course [guce_course_gu_course_number] - [guce_course_guce_program]. Topics include:</p>
-                                <ul class="left-justify" style="list-style-type:square" id='topic-list'>
-                                    <li>Children</li>
-                                    <li>Family</li>
-                                </ul>
-                                <div id="hover-description" class="left">
-                                    <p>[description] in guce_account__dc_ward the guce_progr from the department of the campus Campus</p>
-                                </div>
-                            </div>
-                            <!-- <p>As a [type_of_account] in [dc_ward] the [guce_account_guce_account_name]</p> -->
-                            <!-- For Course sites -->
-                            <!-- <p>[guce_course_instructor_1] in the [guce_course_guce_program] helps out this [type_of_account] in [dc_ward] </p> -->
-                            <!-- <div id="hover-address"> -->
-                            <!-- <h3>128 M ST NW, WASHINGTON, DC, 20001</h3> -->
-                            <!-- <h4>Ossining, NY 10562</h4> -->
-                            <!-- </div> -->
-                            <!-- <section id="navigation">
-                                <div>abv</div>
-                            </section> -->
-                        </section>
-                        <!-- <a href="#learn">
-                            <div id="hover-learn-more" class="blink center">
-                                <h1>Learn More</h1>
-                            </div>
-                        </a> -->
-                    </section>
-                    <!-- <div id="more-info" ng-show="hovered">
-                        <div id="marker" class="center">
-                            <h1 id="name">{{hovered_data.name}}</h1>
-                            <h2>{{hovered_data.address_1}}</h2>
-                            <h2>{{hovered_data.address_2}}</h2>
-                            <div id="learn-more" class="center">
-                                <h1><a href="#learn">Learn more</a></h1>
+                                <a href="#learn" class="blink">
+                                    <div id="learn-more">
+                                        <h1>Learn More</h1>
+                                    </div>
+                                </a> -->
                             </div>
                         </div>
-                    </div> -->
-                </section>
-                <section class="right">
-                    <section id="layers">
-                    </section>
-                    <div id="map"></div>
-                </section>
-            </section>
-            <!-- <section id="learn" class="pane">
-                <div id="scroll-up" class="center blink">
-                    <h1><a href="#discover">Scroll up to explore more</a></h1>
+                        <div id="share">
+                            <div class="ssk-group ssk-lg ssk-grayscale">
+                                <a href="" target="_blank" class="ssk ssk-facebook"></a>
+                                <a href="" target="_blank" class="ssk ssk-twitter"></a>
+                                <a href="" target="_blank" class="ssk ssk-google-plus"></a>
+                                <a href="" target="_blank" class="ssk ssk-pinterest"></a>
+                                <a href="" target="_blank" class="ssk ssk-linkedin"></a>
+                                <a href="" target="_blank" class="ssk ssk-email"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="inset">
-                    <h1>Topic: Sample</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <br>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-            </section>
-            <section id="engage" class="pane"></section> -->
+            </div>
+            <div class="col-right">
+                <div id="map-container">
+                <section id="layers"></section>
+                <div id="map"></div>
+            </div>
+        </div>
     </div>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-41992310-8', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <!-- <script type="text/javascript" src="js/angular.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jsforce.min.js"></script> -->
-    <script type="text/javascript" src="js/onepagescroll.min.js"></script>
-    <script type="text/javascript" src="js/d3.min.js"></script>
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <div id="learn" class="pane">
+        <div class="title">
+            <h1><span class="glyphicon glyphicon-book"></span> Learn</h1>
+
+            <div id="learn-content" class="panel-content">
+                <h1>Hover on the map above to discover the ways Georgetown contributes to the greater D.C. area</h1>
+
+                <!-- <h1>Program Name</h1> -->
+                <!-- <p id="learn-description">Ideally 1-2 ph, contact info, a reaction from someone who helps or is helped, link</p> -->
+            </div>
+        </div>
+    </div>
+    <div id="engage" class="pane">
+        <div class="title">
+            <h1><span class="glyphicon glyphicon-road"></span> Engage</h1>
+        </div>
+        <div id="engage-content" class="panel-content">
+
+            <p>If you're interested in learning more, contact</p><a href="mailto:CommunityeEngagement@georgetown.edu?Subject=Community%20Engagement%0Involvement">CommunityeEngagement@georgetown.edu</a>
+
+            <!-- <p>There is always room to contribute to Georgetown University's Community Engagement Programs</p>
+            <h1>Ideas:</h1>
+            <ul>
+                <li>- Form for contact info</li>
+                <li>- Email</li>
+                <li>- Donate button</li>
+                <li>- "Pledge your support" button</li>
+                <li>- Social media share</li>
+            </ul> -->
+        </div>
+    </div>
+</div>
+<div id="toTop">
+    <a href="#" title="Click To Scroll To Top"><span class="glyphicon glyphicon-arrow-up"></span>To Top</a>
+    <!-- <a href="#" title="Top of the page.">&uarr;</a> -->
+</div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-41992310-8', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- <script type="text/javascript" src="js/angular.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jsforce.min.js"></script> -->
+<script type="text/javascript" src="js/onepagescroll.min.js"></script>
+<script type="text/javascript" src="js/social-share-kit.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
